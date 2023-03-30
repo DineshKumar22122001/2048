@@ -1,0 +1,38 @@
+@import "./styles/index.less";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500&family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.App {
+  max-width: @pixel-size * 60;
+  margin: @pixel-size * 0 auto;
+  h1 {
+    color: blue;
+  }
+
+  .header {
+    display: flex;
+    width: 100%;
+
+    > div {
+      flex: 2;
+    }
+    .center {
+      align-items: center;
+    }
+
+    .button {
+      float: right;
+      margin: @pixel-size * 3.25 @pixel-size * 0;
+    }
+  }
+
+  .footer {
+    margin: @pixel-size * 3 @pixel-size * 0;
+    font-weight: bold;
+    text-align: center;
+  }
+}
